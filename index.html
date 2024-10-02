@@ -8,6 +8,15 @@
 
     <!-- Bootstrap cdn -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Bootstrap Js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- Tailwind cdn -->
     <script src="https://cdn.tailwindcss.com"></script>
 
@@ -264,28 +273,34 @@
         </h1>
 
         <form action="" class="md:flex justify-center">
-            <div class="mx-1"><input type="text" placeholder="Email" class="md:w-64 h-11"></div>
-            <div class="mx-1"><input type="text" placeholder="Name" class="md:w-64 h-11 mt-2 md:mt-0"></div>
+            <div class="md:mx-1 mx-32"><input type="text" placeholder="Email" class="md:w-64 h-11 px-1"></div>
+            <div class="md:mx-1 mx-32"><input type="text" placeholder="Name" class="md:w-64 h-11 mt-2 md:mt-0 px-1">
+            </div>
         </form>
 
         <div class="w-full md:flex flex-col">
-                <form action="" class="md:mt-2" style="margin-left: 35%;">
-                    <textarea style="width: 46.1%;" class="Txt md:h-20 md:mt-0 mt-2" name="" id="" placeholder="Message"></textarea>
-                </form>
+            <form action="" class="md:mt-2" style="margin-left: 35%;">
+                <textarea class="Txt md:h-20 md:mt-0 mt-2 md:w-2/5 w-44 px-1 md:ms-8" name="" id=""
+                    placeholder="Message"></textarea>
+            </form>
         </div>
 
-        <button class="md:bg-zinc-600 bg-gray-300 rounded text-white md:w-40 h-10 md:my-2 my-5 hover:text-black " style="margin-left: 46%;">SEND MESSAGE</button>
+        <button class="md:bg-zinc-600 bg-gray-300 rounded text-white md:w-40 w-40 h-10 md:my-2 my-5 hover:text-black "
+            style="margin-left: 46%;">SEND MESSAGE</button>
 
 
     </div>
 
     <!-- footer -->
-    <footer class="footering p-3 bg-body-secondary flex justify-between">
-        <div>&copy; 2024. All Rights Reserved.</div>
+    <footer class="footering p-3 bg-gray-700 text-white flex justify-between h-50">
+        <div class="md:text-xl items-center md:mt-2">&copy; 2024. All Rights Reserved.</div>
         <div class="flex mx-3">
-            <div class="mx-3"><i class="fa-3x bi bi-instagram"></i></div>
-            <div class="mx-3"><i class="fa-3x bi bi-linkedin"></i></div>
-            <div class="mx-3"><i class="fa-3x bi bi-github"></i></div>
+            <div class="mx-3"><a href="https://www.instagram.com/accounts/login/" target="_blank"
+                    class="hover:text-black"><i class="md:fa-2x fa-xl bi bi-instagram"></a></i></div>
+            <div class="mx-3"><a href="https://www.linkedin.com/in/syed-mohammed-sheheen-0a22b0206/" target="_blank"
+                    class="hover:text-black"><i class="md:fa-2x fa-xl bi bi-linkedin"></a></i></div>
+            <div class="mx-3"><a href="https://github.com/Sheheensyed" target="_blank" class="hover:text-black"><i
+                        class="md:fa-2x fa-xl bi bi-github"></a></i></div>
         </div>
     </footer>
 </body>
